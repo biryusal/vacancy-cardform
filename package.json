@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm test",
-    "build": "webpack --config ./webpack.config.prod.js --mode production",
     "start": "webpack serve --hot --config ./webpack.config.dev.js "
   },
   "keywords": [],
