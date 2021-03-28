@@ -1,0 +1,141 @@
+.auth {
+  &__main {
+    height: calc(100vh - 100px);
+    background-color: #F6F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.authForm {
+  &__wrapper {
+    background-color:#F6F8FF;
+    color: #101D94;
+    height: 520px;
+    width: 401px;
+    left: 440px;
+    top: 250px;
+    border-radius: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px #EBF0FF;
+    border-radius: 24px;
+    padding: 20px 40px;
+
+    &_successful {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__tracker {
+    display: flex;
+    align-items: center;
+    
+    & > * {
+      margin-right: 5px;
+    }
+  }
+
+  &__navtext {
+    text-decoration: none;
+    color: #BCBCBC;
+    font-size: 14px;
+    cursor: pointer;
+
+    &_active {
+      color: #1F2B9B !important;
+    }
+  }
+
+  &__nextIcon {
+    svg {
+      height: 10px;
+      width: 10px;
+      fill: #E2E2E2;
+    }
+  }
+
+  &__submitBtn {
+    height: 45px;
+    width: 180px;
+    border-radius: 5px;
+    background: rgba(25, 165, 39, 0.8);
+
+    color: white;
+    font-size: 19px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    font-size: 18px;
+    border-radius: 5px;
+    color: #6B6B6B;
+    border: 1px solid #DEDCDC;
+    padding: 11px 15px;
+    margin-bottom: 10px;
+
+    &_error {
+      border: 1px solid #FFADAD
+    }
+
+    &_first {
+      margin-bottom: 30px;
+    }
+
+    &_payment {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__label {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  &__select {
+    max-width: 200px;
+    margin-right: 21px;
+  }
+  
+  &__additional {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    flex-flow: row nowrap;
+  }
+}
+
+.authAdditional {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    &:first-of-type {
+      margin-right: 30px;
+    }
+  }
+  .authForm__input {
+    margin-bottom: 0px;
+  }
+}
+
+.authFormSuccess {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__svg {
+    svg {
+      width: 52px;
+    }
+  }
+  &__text {
+    font-size: 24px;
+    color: black;
+  }
+}
